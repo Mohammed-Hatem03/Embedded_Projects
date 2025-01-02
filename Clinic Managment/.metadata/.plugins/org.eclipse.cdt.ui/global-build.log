@@ -1,0 +1,145 @@
+15:41:29 **** Clean-only build of configuration Debug for project clinic_management ****
+rm -rf clinic_management.d clinic_management.exe clinic_management.o 
+15:41:33 **** Rebuild of configuration Debug for project clinic_management ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic_management.o "..\\clinic_management.c" 
+gcc -o clinic_management.exe clinic_management.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `main':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:105:(.text+0x2b7): undefined reference to `cancelReservation'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:129:(.text+0x369): undefined reference to `viewPatientRecord'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:132:(.text+0x370): undefined reference to `viewReservations'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `addPatient':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:173:(.text+0x4aa): undefined reference to `findPatientByID'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `editPatientRecord':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:194:(.text+0x603): undefined reference to `findPatientByID'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `reserveSlot':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:215:(.text+0x73a): undefined reference to `findPatientByID'
+collect2.exe: error: ld returned 1 exit status
+15:41:57 **** Incremental Build of configuration Debug for project clinic_management ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic_management.o "..\\clinic_management.c" 
+..\clinic_management.c: In function 'main':
+..\clinic_management.c:105:25: error: implicit declaration of function 'cancelReservation' [-Wimplicit-function-declaration]
+  105 |                         cancelReservation();
+      |                         ^~~~~~~~~~~~~~~~~
+15:42:07 **** Incremental Build of configuration Debug for project clinic_management ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic_management.o "..\\clinic_management.c" 
+..\clinic_management.c: In function 'main':
+..\clinic_management.c:105:25: error: implicit declaration of function 'cancelReservation' [-Wimplicit-function-declaration]
+  105 |                         cancelReservation();
+      |                         ^~~~~~~~~~~~~~~~~
+15:42:14 **** Incremental Build of configuration Debug for project clinic_management ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic_management.o "..\\clinic_management.c" 
+gcc -o clinic_management.exe clinic_management.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `main':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:129:(.text+0x365): undefined reference to `viewPatientRecord'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:132:(.text+0x36c): undefined reference to `viewReservations'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `addPatient':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:173:(.text+0x4a6): undefined reference to `findPatientByID'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `editPatientRecord':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:194:(.text+0x5ff): undefined reference to `findPatientByID'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `reserveSlot':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:215:(.text+0x736): undefined reference to `findPatientByID'
+collect2.exe: error: ld returned 1 exit status
+15:42:48 **** Incremental Build of configuration Debug for project clinic_management ****
+Info: Internal Builder is used for build
+gcc -o clinic_management.exe clinic_management.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `main':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:129:(.text+0x365): undefined reference to `viewPatientRecord'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:132:(.text+0x36c): undefined reference to `viewReservations'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `addPatient':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:173:(.text+0x4a6): undefined reference to `findPatientByID'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `editPatientRecord':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:194:(.text+0x5ff): undefined reference to `findPatientByID'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `reserveSlot':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:215:(.text+0x736): undefined reference to `findPatientByID'
+collect2.exe: error: ld returned 1 exit status
+15:42:49 **** Incremental Build of configuration Debug for project clinic_management ****
+Info: Internal Builder is used for build
+gcc -o clinic_management.exe clinic_management.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `main':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:129:(.text+0x365): undefined reference to `viewPatientRecord'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:132:(.text+0x36c): undefined reference to `viewReservations'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `addPatient':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:173:(.text+0x4a6): undefined reference to `findPatientByID'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `editPatientRecord':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:194:(.text+0x5ff): undefined reference to `findPatientByID'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic_management.o: in function `reserveSlot':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/clinic_management/Debug/../clinic_management.c:215:(.text+0x736): undefined reference to `findPatientByID'
+collect2.exe: error: ld returned 1 exit status
+15:43:01 **** Incremental Build of configuration Debug for project clinic_management ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic_management.o "..\\clinic_management.c" 
+gcc -o clinic_management.exe clinic_management.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text.startup+0x2e): undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+15:44:26 **** Rebuild of configuration Debug for project AMR_ADEL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic.o "..\\clinic.c" 
+gcc -o AMR_ADEL.exe clinic.o 
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic.o: in function `main':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/AMR_ADEL/Debug/../clinic.c:129:(.text+0x365): undefined reference to `viewPatientRecord'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/AMR_ADEL/Debug/../clinic.c:132:(.text+0x36c): undefined reference to `viewReservations'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic.o: in function `addPatient':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/AMR_ADEL/Debug/../clinic.c:173:(.text+0x4a6): undefined reference to `findPatientByID'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic.o: in function `editPatientRecord':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/AMR_ADEL/Debug/../clinic.c:194:(.text+0x5ff): undefined reference to `findPatientByID'
+C:/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: clinic.o: in function `reserveSlot':
+D:/Courses/Embedded Systems (Mohammed Tarek)/1_Standard Diploma/2.C Programming/C Project/Clinic Managment/AMR_ADEL/Debug/../clinic.c:215:(.text+0x736): undefined reference to `findPatientByID'
+collect2.exe: error: ld returned 1 exit status
+15:46:18 **** Incremental Build of configuration Debug for project AMR_ADEL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic.o "..\\clinic.c" 
+gcc -o AMR_ADEL.exe clinic.o 
+Info: Nothing to build for AMR_ADEL
+13:48:56 **** Incremental Build of configuration Debug for project AMR_ADEL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic.o "..\\clinic.c" 
+gcc -o AMR_ADEL.exe clinic.o 
+Info: Nothing to build for AMR_ADEL
+Info: Nothing to build for AMR_ADEL
+13:56:08 **** Incremental Build of configuration Debug for project AMR_ADEL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic.o "..\\clinic.c" 
+gcc -o AMR_ADEL.exe clinic.o 
+Info: Nothing to build for AMR_ADEL
+Info: Nothing to build for AMR_ADEL
+Info: Nothing to build for AMR_ADEL
+14:03:03 **** Incremental Build of configuration Debug for project AMR_ADEL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic.o "..\\clinic.c" 
+..\clinic.c:320:6: error: redefinition of 'viewReservations'
+  320 | void viewReservations(void) {
+      |      ^~~~~~~~~~~~~~~~
+..\clinic.c:219:6: note: previous definition of 'viewReservations' with type 'void(void)'
+  219 | void viewReservations(void) {
+      |      ^~~~~~~~~~~~~~~~
+14:03:34 **** Incremental Build of configuration Debug for project AMR_ADEL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic.o "..\\clinic.c" 
+gcc -o AMR_ADEL.exe clinic.o 
+14:04:23 **** Incremental Build of configuration Debug for project AMR_ADEL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic.o "..\\clinic.c" 
+gcc -o AMR_ADEL.exe clinic.o 
+Info: Nothing to build for AMR_ADEL
+Info: Nothing to build for AMR_ADEL
+14:05:44 **** Incremental Build of configuration Debug for project AMR_ADEL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic.o "..\\clinic.c" 
+gcc -o AMR_ADEL.exe clinic.o 
+Info: Nothing to build for AMR_ADEL
+14:13:27 **** Incremental Build of configuration Debug for project AMR_ADEL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic.o "..\\clinic.c" 
+gcc -o AMR_ADEL.exe clinic.o 
+Info: Nothing to build for AMR_ADEL
+Info: Nothing to build for AMR_ADEL
+14:16:25 **** Incremental Build of configuration Debug for project AMR_ADEL ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o clinic.o "..\\clinic.c" 
+gcc -o AMR_ADEL.exe clinic.o 
+Info: Nothing to build for AMR_ADEL
+Info: Nothing to build for AMR_ADEL
